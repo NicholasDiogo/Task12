@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Not sure how to carry on with the last two questions.-->
+<body onload="myLoad()">
+    <form>
+        <label for="artistn">Artist name: </label>
+        <input type="text" name="artistn" id="artistn" required>
+        <label for="title">Title: </label>
+        <input type="text" name="title" id="title" required>
+        <label for="album">Album Name: </label>
+        <input type="text" name="album" id="album">
+        <label for="platform">What is your prefered platform: </label>
+        <select id="platform">
+            <option value="">--Choose a prefered platform to advertise on--</option>
+            <option value="facebook">Facebook</option>
+            <option value="Instagram">Instagram</option>
+        </select>
+
+        <label for="areyouinsouthafrica">Are you in South Africa: </label>
+        <input type="text" name="areyouinsouthafrica" id="areyouinsouthafrica">
+        <button onclick="addPerson()">Create new person object</button>
+    </form>
+
+    <!--The below is a drop down with entered data-->
+    <select id="personList" onchange="ChangeActiveUser(this.value)">
+        <option value="">--Please choose a person object--</option>
+    </select>
+    <script type="text/javascript" src="task12.js"></script>
+</body>
+
+</html>
